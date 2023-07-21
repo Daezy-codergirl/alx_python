@@ -1,0 +1,1 @@
+This project in python is about functions
