@@ -1,4 +1,2 @@
-import add_0
-
-__import__ = "__main__"
+__import__ = "__add_0__"
 print("{}" .format(1 + 2))
