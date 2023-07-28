@@ -14,7 +14,7 @@ def best_score(a_dictionary):
 
      return max_key
 
-scores_dict = {'Alice': 85, 'Bob': 92, 'Charlie': 78, 'Adaeze': 121}
+scores_dict = {'John': 12, 'Bob': 14, 'Mike': 14, 'Molly': 16, 'Adam': 10}
 
 best_student = best_score(scores_dict)
      
