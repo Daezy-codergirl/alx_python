@@ -12,7 +12,7 @@ def best_score(a_dictionary):
         max_score = value
         max_key = key
 
-     return max_key
+    return max_key
 
 scores_dict = {'John': 12, 'Bob': 14, 'Mike': 14, 'Molly': 16, 'Adam': 10}
 
