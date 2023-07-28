@@ -14,7 +14,8 @@ matrix = [
     [7, 8, 9]
 
 ]
+if __name__ == "__main__":
 
-new_matrix = square_matrix_simple(matrix)
-print(new_matrix)
-print(matrix)
+ new_matrix = square_matrix_simple(matrix)
+ print(new_matrix)
+ print(matrix)
