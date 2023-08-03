@@ -73,7 +73,7 @@ class Square:
               print()
          else:
               for _ in range(self._size):
-               print("#" * self._size)
+                  print("#" * self._size)
     def get_size(self):
          """ Gets size of square
          return:
