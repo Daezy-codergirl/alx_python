@@ -1,0 +1,1 @@
+This project is about python objects and classes
