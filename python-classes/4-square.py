@@ -41,7 +41,9 @@ class Square:
 
     @size.setter
     def size(self, value):
-       """decorator used in conjuction with @property to define the setter method for a property"""
+       """
+       @size.setter:
+       decorator used in conjuction with @property to define the setter method for a property"""
 
        if not isinstance(value, int):
             raise TypeError("size must be an integer")
@@ -80,6 +82,7 @@ class Square:
          int: The size of the square
          """
          return self.__size
+    
     def set_size(self, new_size):
          """ sets the size of the square to a new value
 
