@@ -7,8 +7,8 @@ parameters:
  a_class: a python class or class name to compare the type of the object against.
 
  returns:
-  true if the object is an instance of the subclass of the specified subclass;
-  otherwise, false.
+ true if the object is an instance of the subclass of the specified subclass;
+ otherwise, false.
  example:
 >>> class Animal:
 ...  pass
@@ -34,10 +34,10 @@ True
 False
 """
 
+
 def inherits_from(obj, a_class):
     """ check if the given object is exactly an instance of the specified class.
-        also if it is inherited from the specified class
-    """
+        also if it is inherited from the specified class"""
     return (
         issubclass(type(obj), a_class)
           and type(obj) != a_class
