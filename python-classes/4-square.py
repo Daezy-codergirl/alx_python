@@ -1,15 +1,15 @@
 """
-This class represent a square with a give size
+   This class represent a square with a give size
 
 Attribute:
-_size(int): The size of the square(private attribute)
+  _size(int): The size of the square(private attribute)
 """
 
 class Square:
     """This class represents a Square with a given size
 
     Attribute:
-    _size(int): The size of the square(private attribute)
+       _size(int): The size of the square(private attribute)
     
     
     """
@@ -74,8 +74,8 @@ class Square:
          if self.__size == 0:
               print()
          else:
-              for _ in range(self._size):
-                  print("#" * self._size)
+              for _ in range(self.__size):
+                  print("#" * self.__size)
     def get_size(self):
          """ Gets size of square
          return:
