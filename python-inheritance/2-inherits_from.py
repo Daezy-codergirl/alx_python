@@ -8,7 +8,6 @@ parameters:
 
  returns:
   boo1: true if the object is an instance of the specified class; otherwise, false.
- 
  example:
 >>> class Animal:
 ...  pass
@@ -32,8 +31,8 @@ True
 True
 >>> inherits_from(obj3, Animal)
 False
-
 """
+
 def inherits_from(obj, a_class):
     """ check if the given object is exactly an instance of the specified class.
         also if it is inherited from the specified class
