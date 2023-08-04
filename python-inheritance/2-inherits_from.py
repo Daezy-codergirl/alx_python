@@ -1,4 +1,3 @@
-
 """
 check if the given object is an instance of a class
 also if it is inherited from the specified class
