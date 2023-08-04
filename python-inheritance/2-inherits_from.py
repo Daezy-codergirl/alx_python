@@ -1,6 +1,5 @@
 """
-  check if the given object is an instance of a class
-  also if it is inherited from the specified class
+  check if the given object is an instance of a classalso if it is inherited from the specified class
 
  parameters:
  obj: any python object.
@@ -31,8 +30,8 @@
    >>> inherits_from(obj2, Animal)
   True
   >>> inherits_from(obj3, Animal)
- False
- """
+ 
+"""
 
 
 def inherits_from(obj, a_class):
