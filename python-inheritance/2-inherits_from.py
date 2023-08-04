@@ -4,10 +4,11 @@ also if it is inherited from the specified class
 
 parameters:
  obj: any python object.
- a_class: a python class or class name to compare the type of the object against.object
+ a_class: a python class or class name to compare the type of the object against.
 
  returns:
-  boo1: true if the object is an instance of the specified class; otherwise, false.
+  true if the object is an instance of the subclass of the specified subclass;
+  otherwise, false.
  example:
 >>> class Animal:
 ...  pass
