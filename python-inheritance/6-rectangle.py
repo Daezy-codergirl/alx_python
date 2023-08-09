@@ -29,8 +29,8 @@ class BaseGeometry:
 
 
 class BaseGeometryMetaClass(type):
-    def _dir_(cls):
-        return [attribute for attribute in super()._dir() if attribute != '__init_subclass_']
+    def __dir__(cls):
+        return [attribute for attribute in super().__dir__() if attribute != '__init_subclass__']
 
 
 class BaseGeometry(metaclass=BaseGeometryMetaClass):
@@ -38,11 +38,11 @@ class BaseGeometry(metaclass=BaseGeometryMetaClass):
     A base class representing geometry
     """
 
-    def _dir_(self):
+    def __dir__(self):
         """
         Customization of the attributes visible when calling `dir()`.
         """
-        return [attribute for attribute in super()._dir() if attribute != '__init_subclass_']
+        return [attribute for attribute in super().__dir__() if attribute != '__init_subclass__']
 
     def area(self):
         """
@@ -83,7 +83,7 @@ class Rectangle(BaseGeometry):
     - _init_(self, width, height): Initialize a rectangle with width and height.
     """
 
-    def _init_(self, width, height):
+    def __init__(self, width, height):
         """
         Initialize a rectangle with width and height.
 

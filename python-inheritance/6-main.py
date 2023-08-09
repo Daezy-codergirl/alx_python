@@ -1,6 +1,6 @@
 Rectangle = __import__('6-rectangle').Rectangle
 
-r = Rectangle()
+r = Rectangle(3, 5)
 
 print(r)
 print(dir(r))
