@@ -7,8 +7,9 @@ class Base:
     creating our first class.
     """
     """
-    A private class
+    a private class
     """
+
     __nb_objects = 0
 
     def __init__(self, id=None):
@@ -18,7 +19,7 @@ class Base:
         self.id = None
 
         """
-        initialize the instance with id
+        initialize instances with id.
         """
         if id is not None:
             self.id = id
