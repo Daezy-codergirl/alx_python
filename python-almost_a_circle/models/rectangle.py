@@ -13,13 +13,13 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
-        @property
-        def width(self):
-            """Get the width of the rectangle"""
-            return self.__width
+    @property
+    def width(self):
+         """Get the width of the rectangle"""
+         return self.__width
         
-        @width.setter
-        def width(self, value):
+    @width.setter
+    def width(self, value):
             """Set the width of the rectangle"""
             self.__width = value
         
