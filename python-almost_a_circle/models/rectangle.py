@@ -5,7 +5,7 @@ The class rectangle is inheriting from class Base
 class Rectangle(Base):
     """Rectangle class that inherits from Base"""
 
-    def __init__(self, width, height, x=0, y=o, id=None):
+    def __init__(self, width, height, x=0, y=0, id=None):
         """initialize the rectangle"""
         super().__init__(id)
         self.width = width
