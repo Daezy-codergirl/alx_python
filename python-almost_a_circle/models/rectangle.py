@@ -6,7 +6,7 @@ class Rectangle(Base):
     """Rectangle class that inherits from Base"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """initialize the rectangle"""
+        """Initialize the rectangle"""
         super().__init__(id)
         self.width = width
         self.height = height
@@ -15,11 +15,11 @@ class Rectangle(Base):
 
         @property
         def width(self):
-            """get the width of the rectangle"""
+            """Get the width of the rectangle"""
             return self.__width
         
         @width.setter
         def width(self, value):
-            """set the width of the rectangle"""
+            """Set the width of the rectangle"""
             self.__width = value
         
