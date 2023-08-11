@@ -10,3 +10,12 @@ class Square(Rectangle):
         super().__init__(size, size, x, y, id)
         # I won't change width and height to size because size isn't defined due to inheritance
         return "[Square] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
+    
+    @property
+    def size(self):
+     # getter method
+      return self.width
+
+    @size.setter
+    def size(self, value):
+        self.width = value
