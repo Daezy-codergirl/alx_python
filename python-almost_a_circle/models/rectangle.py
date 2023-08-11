@@ -122,6 +122,23 @@ class Rectangle(Base):
 
     def __str__(self):
         return"[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
+    
+    # modified from task 4
+    def display(self):
+        """
+        will use this method to display the instancrs using "R"
+        """
+        for row in range(self.y):
+            print()
+        else:
+            for row in range(self.height):
+                for column in range(self.x):
+                    print(" ", end="")
+            else:
+                for column in range(self.width):
+                    print("#", end="")
+                else:
+                    print()
 
 
     
