@@ -164,7 +164,7 @@ class Rectangle(Base):
       """
 
       args_length = len(args)
-      kwargs.length = len(kwargs)
+      kwargs_length = len(kwargs)
 
       for key, value in kwargs.items():
           if key == "id":
