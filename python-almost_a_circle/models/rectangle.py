@@ -20,11 +20,11 @@ class Rectangle(Base):
 
     @property
     def width(self):
-         """Get the width of the rectangle"""
-         return self.__width
+        """Get the width of the rectangle"""
+        return self.__width
         
     @width.setter
     def width(self, value):
-            """Set the width of the rectangle"""
-            self.__width = value
+        """Set the width of the rectangle"""
+        self.__width = value
         
