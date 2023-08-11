@@ -87,7 +87,7 @@ class Rectangle(Base):
     
     @y.setter
     def y(self, value):
-        """Set the x coordinate of the rectangle"""
+        """Set the y coordinate of the rectangle"""
         self.__y = value
 
         """
