@@ -109,6 +109,16 @@ class Rectangle(Base):
             its value after multiplication
         """
         return self.width * self.height
+    
+    def display(self):
+        """
+        will use this method to display the instancrs using "R"
+        """
+        for row in range(self.height):
+            for column in range(self.width):
+                print("#", end="")
+            else:
+                print()
 
 
     
