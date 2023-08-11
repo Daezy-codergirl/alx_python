@@ -140,6 +140,24 @@ class Rectangle(Base):
                 else:
                     print()
 
+    def update(self, *args):
+      """
+      passing arguments to attributes
+      """
+
+      args_length = len(args)
+
+      if args_length > 0:
+          self.id = args[0] # only this will run
+      if args_length > 1:
+          self.width = args[1]  #only "0" then "1" will run
+      if args_length > 2:
+          self.height = args[2] #only "0, 1" then "1" will run
+      if args_length > 3:
+          self.x = args[3]  #only "0, 1, 2" then "1" will run
+      if args_length > 4:
+          self.y = args[4]  #only "0, 1, 2, 3" then "1" will run
+
 
     
         
