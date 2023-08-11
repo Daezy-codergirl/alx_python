@@ -1,3 +1,8 @@
+"""
+The class rectangle is inheriting from class Base
+"""
+
+
 from models.base import Base
 
 
