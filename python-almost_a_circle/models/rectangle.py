@@ -134,11 +134,11 @@ class Rectangle(Base):
             for row in range(self.height):
                 for column in range(self.x):
                     print(" ", end="")
-            else:
-                for column in range(self.width):
-                    print("#", end="")
                 else:
-                    print()
+                    for column in range(self.width):
+                       print("#", end="")
+                    else:
+                       print()
 
     def update(self, *args):
       """
@@ -152,11 +152,42 @@ class Rectangle(Base):
       if args_length > 1:
           self.width = args[1]  #only "0" then "1" will run
       if args_length > 2:
-          self.height = args[2] #only "0, 1" then "1" will run
+          self.height = args[2] #only "0, 1" then "2" will run
       if args_length > 3:
-          self.x = args[3]  #only "0, 1, 2" then "1" will run
+          self.x = args[3]  #only "0, 1, 2" then "3" will run
       if args_length > 4:
-          self.y = args[4]  #only "0, 1, 2, 3" then "1" will run
+          self.y = args[4]  #only "0, 1, 2, 3" then "4" will run
+
+    def update(self, *args, **kwargs):
+      """
+      passing arguments to attributes
+      """
+
+      args_length = len(args)
+      kwargs.length = len(kwargs)
+
+      for key, value in kwargs.items():
+          if key == "id":
+              self.id = value
+          elif key == "width":
+              self.width = value
+          elif key == "height":
+              self.height = value
+          elif key == "x":
+              self.x = value
+          elif key == "y":
+              self.y = value
+
+      if args_length > 0:
+          self.id = args[0] # only this will run
+      if args_length > 1:
+          self.width = args[1]  #only "0" then "1" will run
+      if args_length > 2:
+          self.height = args[2] #only "0, 1" then "2" will run
+      if args_length > 3:
+          self.x = args[3]  #only "0, 1, 2" then "3" will run
+      if args_length > 4:
+          self.y = args[4]  #only "0, 1, 2, 3" then "4" will run
 
 
     
