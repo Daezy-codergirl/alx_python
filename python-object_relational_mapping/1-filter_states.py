@@ -23,3 +23,4 @@ if __name__ == "__main__":
 
     for data in states_data:
         print(data)
+        
