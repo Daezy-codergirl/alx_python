@@ -17,10 +17,10 @@ if __name__ == "__main__":
     db_cur = connector.cursor()
 
     query = "SELECT * FROM states \
-                   WHERE name COLLATE utf8mb4_bin LIKE 'N%'"
+             WHERE name COLLATE utf8mb4_bin \
+             LIKE 'N%'"
     db_cur.execute(query)
     states_data = db_cur.fetchall()
 
     for data in states_data:
-        print(data)
-        
+        print(data) 
